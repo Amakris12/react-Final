@@ -1,0 +1,32 @@
+.footer {
+  width: 100%;
+  height: 10rem;
+  background-color: rgb(0, 0, 0);
+  border-top: white 2px groove;
+}
+.InfoHold {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.shortP {
+  width: 30%;
+}
+.footStuff {
+  text-align: center;
+  margin-top: 0.5rem;
+  width: 40%;
+  color: white;
+}
+.travel {
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.About {
+  width: 100%;
+  // margin: 0rem;
+  color: white;
+  margin-top: 0.5rem;
+  margin-right: 0;
+}
