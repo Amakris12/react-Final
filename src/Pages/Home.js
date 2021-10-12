@@ -5,11 +5,31 @@ import Footer from '../Components/Footer'
 import Card from '../Components/Card'
 import Video from '../Components/Video'
 import BottomCard from '../Components/BottomCard'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Betting from './Betting'
+import Football from './Football'
 
 const Home = () => {
     return (
         <div>
-            <Navbar />
+            <Switch>
+                <Navbar />
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route path="/betting">
+                <Betting />
+                </Route>
+
+                <Route path="/football">
+                <Football />
+                </Route>
+            </Switch>
             <Banner/>
             <div className='cardHolder'>
                 <Card Header='Pros of Betting' Content='Most people that make huge amounts of money from gambling use it to have fun and entertain themselves. Relaxation and comfort comes when you are having fun. Relaxation and comfort calms the brain and erases every form of worries from the mind. Gambling activities have so many economic benefits to the game players.'/>

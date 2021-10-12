@@ -193,6 +193,12 @@ body {
 /* grey used for paragraphs */
 /* lightest grey - used for outlines */
 /* Other Colors used */
+.teams {
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+}
+
 .navBar {
   width: 100%;
   height: 4rem;
@@ -203,11 +209,12 @@ body {
 .navHead {
   color: #ffc600;
   text-align: center;
+  margin-left: 5rem;
   position: relative;
-  top: 0.7rem;
-  left: 7rem;
-  width: 25rem;
-  font-size: 2rem;
+  top: 0.6rem;
+  left: 0rem;
+  width: 30rem;
+  font-size: 2vw;
 }
 
 .navList {
@@ -245,7 +252,7 @@ a {
   width: 100%;
   position: absolute;
   top: 9rem;
-  font-size: 5rem;
+  font-size: 5vw;
   font-weight: bolder;
   text-decoration: underline;
 }
