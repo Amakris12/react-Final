@@ -1,6 +1,4 @@
 import React from 'react'
-import { AiFillInstagram , AiFillTwitterCircle } from "react-icons/ai";
-import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -25,9 +23,9 @@ const Footer = () => {
                 <div>
                     <h3 className='footStuff'>Socials</h3>
                     <ul>
-                        <a href="https://www.instagram.com/andrew.makris/"><li className='travel'>{AiFillInstagram}</li></a>
-                        <a href="https://twitter.com/_amakris12?lang=en"><li className='travel'>{AiFillTwitterCircle}</li></a>
-                        <a href="https://www.tiktok.com/@andrewmakris1"><li className='travel'>{FaTiktok}</li></a>
+                        <a href="https://www.instagram.com/andrew.makris/"><li className='travel'>Instagram</li></a>
+                        <a href="https://twitter.com/_amakris12?lang=en"><li className='travel'>Twitter</li></a>
+                        <a href="https://www.tiktok.com/@andrewmakris1"><li className='travel'>Tiktok</li></a>
                     </ul>
                 </div>
                 <div className='shortP'>

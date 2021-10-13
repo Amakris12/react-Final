@@ -1,29 +1,26 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import Links from '../Util/Links'
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
-    <div>
-        <ul>
+    return(
+        <div  className='navBar'>
+        <h2 className='navHead'>Basketball and Football Information</h2>
+        
+        <ul className='navList'>
             {Links
-                .filter((link)=> link.text !== "Home")
-                .map((link)=>{
-                    const {id, url, text} = link
-                    console.log(link)
-                    return (
-                        <li key={id}>
-                            <Link to={url}><h2 className='item'>{text}</h2></Link>
-                        </li>
-                    )
-                })
-            }
+              .filter((link) => link.text !== "Error")
+              .map((link) => {
+                const { url, id, text } = link;
+                return (
+                  <li className='itemholder' key={id}>
+                    <Link to={url}><p className='navItem'>{text}</p></Link>
+                  </li>
+                );
+              })}
         </ul>
-    </div>
+        
+    </div>)
 }
 
    

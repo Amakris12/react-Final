@@ -1,15 +1,6 @@
 import {React,useEffect,useState} from 'react'
 import axios from "axios";
 import '../styles/index.css';
-import Navbar from '../Components/Navbar'
-import Banner from '../Components/Banner'
-import Footer from '../Components/Footer'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 
 const Football = () => {
     const [teams, setTeams] = useState([]);
@@ -35,8 +26,6 @@ const Football = () => {
     })
     return (
         <div>
-            <Navbar />
-            <Banner />
             {teams.map((team)=>{
                 const {id,name,league,season,country}= team;
                 return (
@@ -48,7 +37,6 @@ const Football = () => {
                     </div>
                 )
             })}
-            <Footer />
         </div>
     )
 }

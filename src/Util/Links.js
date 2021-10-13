@@ -11,8 +11,8 @@ export const Links = [
     },
     {
         id:2,
-        url:"/Betting",
-        text:"Betting",
+        url:"/Basketball",
+        text:"Basketball",
         page:<Betting/>,
     },
     {

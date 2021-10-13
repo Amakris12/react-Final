@@ -3,8 +3,7 @@ import React from 'react'
 const Banner = () => {
     return (
         <div>
-            <h2 className='bannerWord'>We Do Not Approve of Gambling!</h2>
-            <img className='Banner' src="https://www.nflonlinebetting.com/app/uploads/2017/08/home_banner.jpg" alt="" />
+            <img className='Banner' src="https://www.wsn.com/wp-content/uploads/2021/08/nfl-nba.jpg" alt="" />
         </div>
     )
 }

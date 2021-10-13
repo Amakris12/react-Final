@@ -209,12 +209,11 @@ body {
 .navHead {
   color: #ffc600;
   text-align: center;
-  margin-left: 5rem;
-  position: relative;
-  top: 0.6rem;
-  left: 0rem;
   width: 30rem;
   font-size: 2vw;
+  position: relative;
+  top: 0.6rem;
+  left: 1rem;
 }
 
 .navList {
@@ -247,7 +246,7 @@ a {
 }
 
 .bannerWord {
-  color: white;
+  color: gold;
   text-align: center;
   width: 100%;
   position: absolute;
