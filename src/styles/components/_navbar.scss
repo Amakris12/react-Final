@@ -5,7 +5,7 @@
   border-bottom: white 2px groove;
 }
 .navHead {
-  color: red;
+  color: rgb(55, 116, 247);
   text-align: center;
   width: 30rem;
   font-size: 2vw;
@@ -23,9 +23,38 @@
   bottom: 1rem;
 }
 .navItem {
-  color: red;
+  color: rgb(55, 116, 247);
   font-size: 1.1rem;
 }
 a {
   text-decoration: none;
+}
+@media screen and (max-width: 700px) {
+  .navHead {
+    position: relative;
+    left: -8rem;
+    top: 1rem;
+  }
+  .navItem {
+    position: relative;
+    top: 1rem;
+  }
+}
+@media screen and (max-width: 514px) {
+  .navHead {
+    font-size: 0.76rem;
+    position: relative;
+    left: -10rem;
+    top: 1.3rem;
+  }
+  .navItem {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 1.5rem;
+  }
+  .navList {
+    width: 10rem;
+  }
 }

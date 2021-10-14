@@ -5,8 +5,7 @@ import '../styles/index.css';
 
 const Betting = () => {
     const [bet, setBet] = useState([]);
-    useEffect(()=>{
-        const options = {
+    const options = {
         method: 'GET',
         url: 'https://api-nba-v1.p.rapidapi.com/games/seasonYear/2021',
         headers: {
@@ -14,32 +13,36 @@ const Betting = () => {
             'x-rapidapi-key': 'd8f0fbc078mshb6bdec4985ef8b7p17e369jsn6e42463f2fec'
         }
         };
+    useEffect(()=>{
         axios.request(options).then(function (response) {
-            const entries = Object.entries(response.data)
-            // const entries = response.json();
-            console.log(entries)
-            setBet(entries)
+           const entires = (response.data)
+           console.log(entires.api.games)
+           setBet(entires.api.games)
         }).catch(function (error) {
             console.error(error);
         });
     },[])
-    const local = bet[0]
-    console.log(local[1].games)
     return (
         <>
-         <div>
-            {/* {local[1].games.map((Betting)=>{
-                const {seasonYear, league, gameId, teamId,live} = Betting;
+         <div className='nbaGames'>
+            {bet.map((Betting)=>{
+                const {league,seasonYear,hTeam,vTeam,fullName,score,points,statusGame} = Betting;
                 return(
-                    <div>
-                        <h1>{league}</h1>
-                        <h3>{seasonYear}</h3>
-                        <p className='teams'>{gameId}</p>
-                        <p>{teamId}</p>
-                        <p>{live}</p>
+                    <div className='Games'>
+                        <h1 className='league'>{league}</h1>
+                        <h4 className='season'>{seasonYear}</h4>
+                        <div className='squads'>
+                            <h2 className='teamNames'>{hTeam.fullName}</h2>
+                            <h2 className='teamNames'>{vTeam.fullName}</h2>
+                        </div>
+                        <div className='squadsTwo'>
+                            <p className='teamScores'>{hTeam.score.points}</p>
+                            <p className='teamScores2'>{vTeam.score.points}</p> 
+                        </div>
+                        <p className='status'>{statusGame}</p>
                     </div>
                 )
-            })} */}
+            })}
         </div> 
         </>
     )

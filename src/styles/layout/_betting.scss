@@ -1,5 +1,59 @@
-.teams {
+.Games {
+  box-shadow: hsla(216, 100%, 50%, 0.7) 2px 2px 2px 2px;
+  border-radius: 30px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  margin-top: 4rem;
+  margin-right: 5rem;
+  margin-left: 6rem;
+  margin-bottom: 2rem;
+  height: 50vh;
+  width: 90vw;
   color: white;
+}
+.league {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
+}
+.season {
+  text-align: center;
+}
+.squads {
+  width: 80%;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+  position: relative;
+  left: -1.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.squadsTwo {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 80%;
+}
+.status {
+  text-align: center;
+  position: relative;
+  top: 5rem;
+}
+.teamNames {
+  position: relative;
+  left: 1rem;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.teamScores {
+  position: relative;
+  bottom: 0rem;
+  left: 4.5rem;
+  font-size: 2rem;
+}
+.teamScores2 {
+  position: relative;
+  bottom: 0rem;
+  right: 7rem;
+  font-size: 2rem;
 }

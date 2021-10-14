@@ -3,7 +3,7 @@ import React from 'react'
 const Banner = () => {
     return (
         <div>
-            <img className='Banner' src="https://images.daznservices.com/di/library/sporting_news/fd/63/xd-5260snnflvsnbagraphicjpg_mak8mx69oszx1ns2bvgscwh1g.jpg?t=-851660251&quality=100" alt="" />
+            <img className='Banner' src="https://www.parlons-basket.com/wp-content/uploads/2020/04/NBA-Kobe-Bryant-LeBron-James-Stephen-Curry-Kevin-Durant-Michael-Jordan.jpg" alt="" />
         </div>
     )
 }
