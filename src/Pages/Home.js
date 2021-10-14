@@ -1,19 +1,19 @@
 import React from 'react'
 import Card from '../Components/Card'
-import Video from '../Components/Video'
+import Links from '../Components/Links'
 import BottomCard from '../Components/BottomCard'
 const Home = () => {
     return (
         <div>
             <div className='cardHolder'>
-                <Card Header='Pros of Betting' Content='Most people that make huge amounts of money from gambling use it to have fun and entertain themselves. Relaxation and comfort comes when you are having fun. Relaxation and comfort calms the brain and erases every form of worries from the mind. Gambling activities have so many economic benefits to the game players.'/>
-                <Card Header='About Us' Content='We are just here to give you some helpful information on sports betting. We do not condone it or promote such but if you were to start sports betting. Look here and use the information we provided to you.'/>
-                <Card Header='Cons of Betting' Content='Harm from gambling isn’t just about losing money. Gambling can affect self-esteem, relationships, physical and mental health, work performance and social life. It can harm not only the person who gambles but also family, friends, workplaces and communities'/>
+                <Card Header='About the NFL' Content='The National Football League is a professional American football league consisting of 32 teams, divided equally between the National Football Conference and the American Football Conference.'/>
+                <Card Header='About Us' Content='This website is just to show you the current, previous, and future games of either the NFL or NBA. We give live updates for whatever game you are looking for, wether that to checkup on your favorite team or check to see if the team you bet on is covering the spread. If any problems contact us at the email down below. '/>
+                <Card Header='About the NBA' Content='The National Basketball Association is a professional basketball league in North America. The league is composed of 30 teams and is one of the four major professional sports leagues in the United States and Canada. It is the premier mens professional basketball league in the world.'/>
             </div>
-            <Video/>
+            <Links/>
             <div className='cardHolder'>
-                <BottomCard className='bottomCard' Header='How to bet' Content='The basics and what you should be looking for on this website is Point Spreads, money Spread and totals. These are what you should be betting on. After doing research here look for places you can make bets and make money!'/>
-                <BottomCard className='bottomCard' Header='What we Provide' Content='All we provide here is the information that can make you the most successful bettor you could possibly be. We provide you with betting odds which can help you further decide who you would like to place a bet on. We also tell you about the current status of nfl teams which will also help you decide who to bet on.'/>
+                <BottomCard className='bottomCard' Header='What we provide about the NFL' Content='What we provide about the NFL is all the previous, live, and future games that are going on in the current season. If you have made any bets or want to keep updated on your favorite team. Check here for updates!  '/>
+                <BottomCard className='bottomCard' Header='What we provide about the NBA' Content='What we provide about the NBA is all the previous, live, and future games that are going on in the current season. If you have made any bets or want to keep updated on your favorite team. Check here for updates!'/>
             </div>
         </div>
     )

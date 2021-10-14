@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className='shortP'>
                     <h3 className='footStuff'>About</h3>
-                    <p className='About'>We are just here to give you some helpful information on sports betting. We do not condone it or promote such but if you were to start sports betting</p>
+                    <p className='About'>This website is just to show you the current, previous, and future games of either the NFL or NBA. We give live updates for whatever game you are looking for, wether that to checkup on your favorite team or check to see if the team you bet on is covering the spread.  </p>
                 </div>
             </div>
         </div>
