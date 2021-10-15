@@ -11,14 +11,14 @@ export const Links = [
     },
     {
         id:2,
-        url:"/Basketball",
-        text:"Basketball",
+        url:"/Games",
+        text:"Games",
         page:<Betting/>,
     },
     {
         id:3,
-        url:"/Football",
-        text:"Football",
+        url:"/Records",
+        text:"Records",
         page:<Football/>,
     },
     {

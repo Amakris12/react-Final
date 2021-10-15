@@ -26,18 +26,23 @@ const Betting = () => {
         <>
          <div className='nbaGames'>
             {bet.map((Betting)=>{
-                const {league,seasonYear,hTeam,vTeam,fullName,score,points,statusGame} = Betting;
+                const {league,seasonYear,hTeam,vTeam,statusGame} = Betting;
                 return(
                     <div className='Games'>
-                        <h1 className='league'>{league}</h1>
-                        <h4 className='season'>{seasonYear}</h4>
+                       <div className='leagueAndSeason'>
+                            <h1 className='league'>{league}</h1>
+                            <h4 className='season'>{seasonYear}</h4>
+                       </div>
+                        <div className='teamsAndScores'>
                         <div className='squads'>
                             <h2 className='teamNames'>{hTeam.fullName}</h2>
-                            <h2 className='teamNames'>{vTeam.fullName}</h2>
+                            <p className='teamScores'>{hTeam.score.points}</p>
+                            
                         </div>
                         <div className='squadsTwo'>
-                            <p className='teamScores'>{hTeam.score.points}</p>
+                            <h2 className='teamNames'>{vTeam.fullName}</h2>
                             <p className='teamScores2'>{vTeam.score.points}</p> 
+                        </div>
                         </div>
                         <p className='status'>{statusGame}</p>
                     </div>

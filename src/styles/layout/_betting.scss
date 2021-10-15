@@ -8,52 +8,51 @@
   margin-bottom: 2rem;
   height: 50vh;
   width: 90vw;
+  position: relative;
+  right: 2rem;
   color: white;
 }
 .league {
   text-align: center;
-  font-size: 4rem;
+  font-size: 6rem;
 }
 .season {
   text-align: center;
 }
 .squads {
-  width: 80%;
-  margin-top: 2rem;
-  margin-left: 0.5rem;
   position: relative;
-  left: -1.5rem;
-  display: flex;
-  justify-content: space-between;
+  right: 20rem;
+  display: block;
+  width: 75%;
+  margin-top: 2rem;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 .squadsTwo {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  left: 20rem;
+  bottom: 7rem;
+  display: block;
   text-align: center;
-  width: 80%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .status {
   text-align: center;
   position: relative;
-  top: 5rem;
+  top: 1rem;
 }
 .teamNames {
-  position: relative;
-  left: 1rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bolder;
 }
 .teamScores {
-  position: relative;
-  bottom: 0rem;
-  left: 4.5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .teamScores2 {
-  position: relative;
-  bottom: 0rem;
-  right: 7rem;
   font-size: 2rem;
 }

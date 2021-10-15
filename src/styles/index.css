@@ -23,13 +23,15 @@ summary {
 }
 
 html {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 img,
@@ -51,6 +53,7 @@ blockquote,
 q {
   quotes: none;
 }
+
 blockquote::before, blockquote::after,
 q::before,
 q::after {
@@ -99,19 +102,19 @@ pre {
   word-wrap: break-word;
 }
 
-input [type=radio] {
+input [type="radio"] {
   vertical-align: text-bottom;
 }
 
-input [type=checkbox] {
+input [type="checkbox"] {
   vertical-align: bottom;
 }
 
-.ie7 input [type=checkbox] {
+.ie7 input [type="checkbox"] {
   vertical-align: baseline;
 }
 
-.ie6 input[type=checkbox] {
+.ie6 input[type="checkbox"] {
   vertical-align: text-bottom;
 }
 
@@ -146,15 +149,15 @@ sub {
 
 .clickable,
 label,
-input[type=button],
-input[type=submit],
-input[type=file],
+input[type="button"],
+input[type="submit"],
+input[type="file"],
 button {
   cursor: pointer;
 }
 
 button,
-input[type=button] {
+input[type="button"] {
   width: auto;
   overflow: hidden;
 }
@@ -181,6 +184,7 @@ input[type=button] {
 /* Other Colors used */
 body {
   background-color: #0f0f0f;
+  overflow-x: hidden;
 }
 
 /* dark shades of primary color*/
@@ -194,7 +198,8 @@ body {
 /* lightest grey - used for outlines */
 /* Other Colors used */
 .Games {
-  box-shadow: rgba(0, 102, 255, 0.7) 2px 2px 2px 2px;
+  -webkit-box-shadow: rgba(0, 102, 255, 0.7) 2px 2px 2px 2px;
+          box-shadow: rgba(0, 102, 255, 0.7) 2px 2px 2px 2px;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.7);
   margin-top: 4rem;
@@ -203,12 +208,14 @@ body {
   margin-bottom: 2rem;
   height: 50vh;
   width: 90vw;
+  position: relative;
+  right: 2rem;
   color: white;
 }
 
 .league {
   text-align: center;
-  font-size: 4rem;
+  font-size: 6rem;
 }
 
 .season {
@@ -216,47 +223,43 @@ body {
 }
 
 .squads {
-  width: 80%;
-  margin-top: 2rem;
-  margin-left: 0.5rem;
   position: relative;
-  left: -1.5rem;
-  display: flex;
-  justify-content: space-between;
+  right: 20rem;
+  display: block;
+  width: 75%;
+  margin-top: 2rem;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .squadsTwo {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
+  left: 20rem;
+  bottom: 7rem;
+  display: block;
   text-align: center;
-  width: 80%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .status {
   text-align: center;
   position: relative;
-  top: 5rem;
+  top: 1rem;
 }
 
 .teamNames {
-  position: relative;
-  left: 1rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bolder;
 }
 
 .teamScores {
-  position: relative;
-  bottom: 0rem;
-  left: 4.5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .teamScores2 {
-  position: relative;
-  bottom: 0rem;
-  right: 7rem;
   font-size: 2rem;
 }
 
@@ -264,7 +267,8 @@ body {
   display: block;
   width: 23vw;
   height: 43vh;
-  box-shadow: white 2px 2px 2px 2px;
+  -webkit-box-shadow: white 2px 2px 2px 2px;
+          box-shadow: white 2px 2px 2px 2px;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.7);
   margin-top: 4rem;
@@ -299,9 +303,14 @@ body {
 }
 
 .NBAteam {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .navBar {
@@ -322,8 +331,12 @@ body {
 }
 
 .navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 20rem;
   margin-left: auto;
   position: relative;
@@ -346,12 +359,12 @@ a {
     left: -8rem;
     top: 1rem;
   }
-
   .navItem {
     position: relative;
     top: 1rem;
   }
 }
+
 @media screen and (max-width: 514px) {
   .navHead {
     font-size: 0.76rem;
@@ -359,19 +372,22 @@ a {
     left: -10rem;
     top: 1.3rem;
   }
-
   .navItem {
     font-size: 0.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     position: relative;
     top: 1.5rem;
   }
-
   .navList {
     width: 10rem;
   }
 }
+
 .Banner {
   width: 100%;
   height: 30rem;
@@ -398,9 +414,14 @@ a {
 
 .InfoHold {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .shortP {
@@ -432,12 +453,14 @@ a {
     font-size: 0.7rem;
   }
 }
+
 .card {
-  width: 27rem;
-  height: 16rem;
+  width: 40rem;
+  height: 20rem;
   margin-top: 3rem;
   margin-bottom: 0rem;
-  box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.8), 0 0px 15px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.8), 0 0px 15px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.8), 0 0px 15px rgba(0, 0, 0, 0.8);
   background-color: rgba(15, 15, 15, 0.9);
   border-radius: 0.75rem;
 }
@@ -445,35 +468,60 @@ a {
 .cardHead {
   text-align: center;
   color: #3774f7;
-  font-size: 2.3rem;
+  font-size: 4rem;
 }
 
 .contentCard {
   margin: 1rem;
   text-align: center;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 
 .cardHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .bottomCard {
-  box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.8), 0 0px 15px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.8), 0 0px 15px rgba(0, 0, 0, 0.8);
+          box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.8), 0 0px 15px rgba(0, 0, 0, 0.8);
   background-color: rgba(15, 15, 15, 0.9);
-  height: 17rem;
-  width: 33rem;
+  height: 20rem;
+  width: 70rem;
   margin-bottom: 2rem;
   border-radius: 0.75rem;
 }
 
+@media screen and (max-width: 700px) {
+  .cardHead {
+    text-align: center;
+    color: #3774f7;
+    font-size: 2rem;
+  }
+  .contentCard {
+    margin: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+  }
+}
+
 .ImgHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -483,14 +531,21 @@ a {
   width: 60vw;
   height: 50vh;
   margin: 3rem;
-  box-shadow: 2px 2px 2px 2px black;
+  -webkit-box-shadow: 2px 2px 2px 2px black;
+          box-shadow: 2px 2px 2px 2px black;
   border-radius: 30px;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 #body {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   margin: 0;
@@ -498,11 +553,17 @@ a {
 
 .progress {
   background: rgba(255, 255, 255, 0.1);
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   border-radius: 100px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   padding: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 40px;
   width: 500px;
@@ -511,7 +572,8 @@ a {
 .progress-value {
   -webkit-animation: load 5s normal forwards;
           animation: load 5s normal forwards;
-  box-shadow: 0 10px 40px 0px white;
+  -webkit-box-shadow: 0 10px 40px 0px white;
+          box-shadow: 0 10px 40px 0px white;
   border-radius: 100px;
   background: black;
   height: 30px;
@@ -543,10 +605,12 @@ a {
     width: 100%;
   }
 }
+
 .Error {
   width: 25rem;
   height: 15rem;
-  box-shadow: inset, black white;
+  -webkit-box-shadow: inset, black white;
+          box-shadow: inset, black white;
   background-color: rgba(48, 48, 48, 0.9);
   border-radius: 0.75rem;
 }
@@ -555,4 +619,5 @@ a {
   color: white;
   text-align: center;
   font-size: 3rem;
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */

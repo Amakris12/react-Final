@@ -1,6 +1,6 @@
 .card {
-  width: 27rem;
-  height: 16rem;
+  width: 40rem;
+  height: 20rem;
   margin-top: 3rem;
   margin-bottom: 0rem;
   box-shadow: inset $dark-shadow, $dark-shadow;
@@ -10,13 +10,13 @@
 .cardHead {
   text-align: center;
   color: rgb(55, 116, 247);
-  font-size: 2.3rem;
+  font-size: 4rem;
 }
 .contentCard {
   margin: 1rem;
   text-align: center;
   color: white;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 .cardHolder {
   display: flex;
@@ -26,8 +26,22 @@
 .bottomCard {
   box-shadow: inset $dark-shadow, $dark-shadow;
   background-color: rgba(15, 15, 15, 0.9);
-  height: 17rem;
-  width: 33rem;
+  height: 20rem;
+  width: 70rem;
   margin-bottom: 2rem;
   border-radius: $radius;
+}
+
+@media screen and (max-width:700px) {
+  .cardHead {
+    text-align: center;
+    color: rgb(55, 116, 247);
+    font-size: 2rem;
+  }
+  .contentCard {
+    margin: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+  }
 }

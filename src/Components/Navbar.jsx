@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const Navbar = () => {
     return(
         <div  className='navBar'>
-        <h2 className='navHead'>NBA Games and Standings </h2>
+        <h2 className='navHead'>NBA Games and Records </h2>
         
         <ul className='navList'>
             {Links

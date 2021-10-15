@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <div className='shortP'>
                     <h3 className='footStuff'>About</h3>
-                    <p className='About'>This website is just to show you the current, previous, and future games of either the NFL or NBA. We give live updates for whatever game you are looking for, wether that to checkup on your favorite team or check to see if the team you bet on is covering the spread.  </p>
+                    <p className='About'>What we give you guys is all the useful tips you need to know about your nba bets and too see if your team is covering the spread. We show curent records and current scores of the NBA. We give live updates for whatever game you are looking for, wether that to checkup on your favorite team. If any problems contact us at the email down below. </p>
                 </div>
             </div>
         </div>
